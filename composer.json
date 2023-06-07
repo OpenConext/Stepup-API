@@ -61,7 +61,19 @@
         ],
         "post-update-cmd": [
             "@auto-scripts"
-        ]
+        ],
+        "check": [
+            "@phpcs",
+            "@phpmd",
+            "@yaml-lint",
+            "@test",
+            "@security"
+        ],
+        "phpcs": "./ci/qa/phpcs",
+        "phpmd": "./ci/qa/phpmd",
+        "yaml-lint": "./ci/qa/yaml-lint",
+        "test": "./ci/qa/phpunit",
+        "security": "./ci/qa/security"
     },
     "conflict": {
         "symfony/symfony": "*"

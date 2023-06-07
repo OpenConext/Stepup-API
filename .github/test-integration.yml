@@ -1,0 +1,23 @@
+name: Run quality assurance tests
+
+on:
+  pull_request:
+  push:
+    branches: [ master, develop ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Check out the repo
+        uses: actions/checkout@v2
+
+      - name: Run composer
+        run: |
+          composer install -n --prefer-dist -o --ignore-platform-reqs
+
+      - name: Run CI tests
+        run: |
+          composer check

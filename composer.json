@@ -31,8 +31,11 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
-        }
+            "Surnfet\\": "src/Surfnet"
+        },
+        "classmap": [
+            "src/Surfnet/StepupApi/Kernel.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

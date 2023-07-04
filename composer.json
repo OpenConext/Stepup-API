@@ -1,8 +1,8 @@
 {
-    "name": "symfony/skeleton",
+    "name": "surfnet/stepup-api",
     "type": "project",
-    "license": "proprietary",
-    "description": "A minimal Symfony project recommended to create bare bones applications",
+    "license": "Apache-2.0",
+    "description": "The SURF Step-up API exposes a way to retrieve Step-up Tokens.",
     "minimum-stability": "stable",
     "prefer-stable": true,
     "require": {
@@ -28,8 +28,11 @@
     },
     "autoload": {
         "psr-4": {
-            "App\\": "src/"
-        }
+            "Surfnet\\": "src/Surfnet"
+        },
+        "classmap": [
+            "src/Surfnet/StepupApi/Kernel.php"
+        ]
     },
     "autoload-dev": {
         "psr-4": {

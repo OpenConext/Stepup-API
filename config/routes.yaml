@@ -1,5 +1,5 @@
 controllers:
     resource:
-        path: ../src/Controller/
+        path: ../src/Surfnet/StepupApi/Controller/
         namespace: App\Controller
     type: attribute

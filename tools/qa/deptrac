@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+cd $(dirname $0)/../../
+mkdir -p var/qa
+cd var/qa
+
+# https://github.com/qossmic/deptrac
+./../../vendor/bin/deptrac analyze --config-file ../../tools/qa/depfile.yaml $1

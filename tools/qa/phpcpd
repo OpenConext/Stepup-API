@@ -1,0 +1,7 @@
+#!/usr/bin/env sh
+
+cd $(dirname $0)/../../
+
+# https://github.com/sebastianbergmann/phpcpd
+./vendor/bin/phpcpd \
+    src tests $1

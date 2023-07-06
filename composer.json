@@ -28,8 +28,6 @@
         "phpunit/phpunit": "^9.5",
         "qossmic/deptrac-shim": "^1.0",
         "sebastian/phpcpd": "^6.0",
-        "symfony/browser-kit": "6.0.*",
-        "symfony/css-selector": "6.0.*",
         "symfony/phpunit-bridge": "^6.0"
     },
     "config": {
@@ -81,8 +79,7 @@
             "@phpmd",
             "@phpstan",
             "@deptrac",
-            "@test",
-            "@security"
+            "@test"
         ],
         "phplint": "./tools/qa/phplint",
         "phpcs": "./tools/qa/phpcs",
@@ -91,8 +88,7 @@
         "phpstan": "./tools/qa/phpstan",
         "deptrac": "./tools/qa/deptrac",
         "phpcpd": "./tools/qa/phpcpd",
-        "test": "./tools/qa/phpunit",
-        "security": "./tools/qa/security"
+        "test": "bin/phpunit"
     },
     "conflict": {
         "symfony/symfony": "*"

@@ -68,5 +68,18 @@
             "allow-contrib": false,
             "require": "6.3.*"
         }
+    },
+    "archive": {
+        "exclude": [
+            "*",
+            ".*",
+            "!/bin",
+            "!/component_info",
+            "!/config",
+            "!/public",
+            "!/src",
+            "!/var/cache/prod",
+            "!/vendor"
+        ]
     }
 }
